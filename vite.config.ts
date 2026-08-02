@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/CyberDriftGame/',
   plugins: [
     react(),
     VitePWA({
@@ -15,7 +16,7 @@ export default defineConfig({
         theme_color: '#0b0f1a',
         background_color: '#0b0f1a',
         display: 'fullscreen',
-        start_url: '/',
+        start_url: '/CyberDriftGame/',
       },
     }),
   ],
